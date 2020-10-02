@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 body{
-    background: linear-gradient(to bottom, rgba(255, 255, 255, .7), rgba(252, 255,255, .9))
+    background: linear-gradient(to bottom, rgba(204, 173, 134, 0.5), rgba(161, 196, 196, 0.3), rgba(80, 172, 175, 0.3))
+    /* background: linear-gradient(to bottom, rgba(255, 255, 255, .7), rgba(252, 255,255, .9)) */
 }
 .signature h1{
     text-align: center;
@@ -32,6 +33,7 @@ body{
     background-origin: border-box;
     display: flex;
     height: 30rem;
+    
     
 }
 
@@ -61,7 +63,7 @@ body{
     padding: 0rem .5rem;
 }
 .intro{
-    padding: 1rem 1rem;
+    padding: .5rem 1rem;
     font-size: 1.1rem;
     font-family: tahoma;
     line-height: 2rem;
@@ -74,6 +76,16 @@ body{
     color: blue;
     padding-bottom: 1rem;
     margin-top: 1.4rem;
+    animation: 2s fly infinite alternate;
+}
+@keyframes fly{
+    from{
+        transform: translateY(0px);
+    }
+
+    to{
+        transform: translateY(15px);
+    }
 }
 .firstexperience, .secondexperience, .thirdexperience, .fourthexperience, .fifthexperience{
     text-align: center;
@@ -117,7 +129,7 @@ blockquote{
 .personal-quote{
     font-size: 1.4rem;
     text-align: center;
-    padding-top: 1.2rem;
+    padding: 1.2rem ;
     animation: 2s scale infinite alternate-reverse;
     transition: 2s ease;
 }
@@ -139,6 +151,7 @@ blockquote{
 }
 .about-justice{
     margin-top: 2.1rem;
+    animation: 2s fly infinite alternate;
 }
 .meet-logo{
    width: 48px;
