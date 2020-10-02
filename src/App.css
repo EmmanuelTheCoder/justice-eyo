@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to bottom, rgba(255, 255, 255, .7), rgba(252, 255,255, .9))
+}
+.signature h1{
+    text-align: center;
+    margin-top: 1rem;
+    animation: design 4s linear infinite;
+    text-transform: uppercase;
+}
+@keyframes design{
+    0%{
+        color: blue;
+    }
+    20%{
+        color: orange;
+    }
+    50%{
+        color: red;
+    }
+    100%{
+        color: black
+    }
+}
+.introduction{
+    background: url(./pictures/justice5.jpg)no-repeat;
+    background-size: cover;
+    background-origin: border-box;
+    display: flex;
+    height: 30rem;
+    
+}
+
+.introduction h2{
+    /* color: rgb(28, 28, 240); */
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-self: center;
+    align-self: flex-end;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.introduction .social img{
+    display: flex;
+    justify-content: center;
+    margin-left: 1.2rem;
+    color: red;
+    width: 25px;
+}
+
+
+.introduction .slash{
+    font-size: 1.8rem;
+    font-weight: 900;
+    padding: 0rem .5rem;
+}
+.intro{
+    padding: 1rem 1rem;
+    font-size: 1.1rem;
+    font-family: tahoma;
+    line-height: 2rem;
+    color: black;
+       
+}
+.experience{
+    text-align: center;
+    font-size: 2rem;
+    color: blue;
+    padding-bottom: 1rem;
+    margin-top: 1.4rem;
+}
+.firstexperience, .secondexperience, .thirdexperience, .fourthexperience, .fifthexperience{
+    text-align: center;
+    padding: .5rem 1rem;
+    margin-bottom: 1.2rem;
+}
+.firstexperience img, .secondexperience img, .thirdexperience img, .fourthexperience img, .fifthexperience img{
+    margin-bottom: .9rem;
+}
+.firstexperience p, .firstexperience h3, .secondexperience p, .secondexperience h3, .thirdexperience p, .thirdexperience h3, .fourthexperience p, .fourthexperience h3, .fifthexperience p, .fifthexperience h3{
+    text-align: left;
+}
+.firstexperience :nth-child(2), .secondexperience :nth-child(2), .thirdexperience :nth-child(2), .fourthexperience :nth-child(2), .fifthexperience :nth-child(2){
+    font-size: 1.3rem;
+}
+.firstexperience :nth-child(3), .secondexperience :nth-child(3), .thirdexperience :nth-child(3), .fourthexperience :nth-child(3), .fifthexperience :nth-child(3){
+    font-size: 1.2rem;
+    font-style: italic;
+}
+.firstexperience :nth-child(5), .secondexperience :nth-child(5), .thirdexperience :nth-child(5), .fourthexperience :nth-child(5), .fifthexperience :nth-child(5){
+    font-size: 1.1rem;
+}
+@media(min-width: 740px){
+    .firstexperience {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+.t{
+    font-size: 3rem;
+    font-style: italic;
+}
+.e{
+    font-family: Helvetica;
+    font-size: 2.5rem;
+}
+blockquote{
+    font-style: italic;
+    color: rgb(101, 101, 206);
+}
+.personal-quote{
+    font-size: 1.4rem;
+    text-align: center;
+    padding-top: 1.2rem;
+    animation: 2s scale infinite alternate-reverse;
+    transition: 2s ease;
+}
+.personal-quote blockquote{
+    color: blue;
+}
+@keyframes scale{
+    0%{
+        transform: scale(1.05);
+    }
+    
+}
+.meet-justice{
+    text-align: center;
+    color: blue;
+}
+.meet{
+    font-style: italic;
+}
+.about-justice{
+    margin-top: 2.1rem;
+}
+.meet-logo{
+   width: 48px;
+   padding-left: .5rem;
+   
+}
+.experience-logo{
+    width: 48px;
+    margin-left: .5rem;
+}
