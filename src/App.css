@@ -1,19 +1,25 @@
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body{
-    background: linear-gradient(to bottom, rgba(204, 173, 134, 0.5), rgba(161, 196, 196, 0.3), rgba(80, 172, 175, 0.3))
+    /*background: linear-gradient(to bottom, rgba(204, 173, 134, 0.5), rgba(161, 196, 196, 0.3), rgba(80, 172, 175, 0.3))*/
     /* background: linear-gradient(to bottom, rgba(255, 255, 255, .7), rgba(252, 255,255, .9)) */
+    background: #fff;
+
 }
 .signature h1{
     text-align: center;
     margin-top: 1rem;
     animation: design 4s linear infinite;
     text-transform: uppercase;
+    color: blue;
+    font-family: Monstserrat;
+    font-weight: 700;
 }
-@keyframes design{
+/*@keyframes design{
     0%{
         color: blue;
     }
@@ -26,13 +32,15 @@ body{
     100%{
         color: black
     }
-}
+}*/
 .introduction{
-    background: url(./pictures/justice5.jpg)no-repeat;
-    background-size: cover;
-    background-origin: border-box;
-    display: flex;
     height: 30rem;
+    width: 100%;
+    background: url(./pictures/justice5.jpg)no-repeat;
+    background-size:100% 100%;
+    /*background-position:100% 100%;*/
+    display: flex;
+
     
     
 }
@@ -46,6 +54,7 @@ body{
     align-self: flex-end;
     margin-left: auto;
     margin-right: auto;
+    font-size: 1.4rem;
 
 }
 .introduction .social img{
@@ -64,16 +73,18 @@ body{
 }
 .intro{
     padding: .5rem 1rem;
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     font-family: tahoma;
     line-height: 2rem;
     color: black;
+    font-family: Montserrat;
+
        
 }
 .experience{
     text-align: center;
     font-size: 2rem;
-    color: blue;
+    color: black;
     padding-bottom: 1rem;
     margin-top: 1.4rem;
     animation: 2s fly infinite alternate;
@@ -134,7 +145,7 @@ blockquote{
     transition: 2s ease;
 }
 .personal-quote blockquote{
-    color: blue;
+    color: black;
 }
 @keyframes scale{
     0%{
@@ -144,7 +155,7 @@ blockquote{
 }
 .meet-justice{
     text-align: center;
-    color: blue;
+    color: black;
 }
 .meet{
     font-style: italic;
@@ -152,6 +163,8 @@ blockquote{
 .about-justice{
     margin-top: 2.1rem;
     animation: 2s fly infinite alternate;
+    color: blue;
+    font-size: 2.4rem;
 }
 .meet-logo{
    width: 48px;
@@ -162,3 +175,59 @@ blockquote{
     width: 48px;
     margin-left: .5rem;
 }
+.contact-form{
+    text-align: center;
+}
+/*input{
+    margin-bottom:1rem;
+    height: 2rem;
+    width: 14rem;
+}*/
+
+input, textarea{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  outline: none;
+}
+input{
+  width: 15rem;
+  height: 1.6rem;
+}
+label{
+  font-size: 1.2rem;
+  font-family: Tahoma;
+}
+button{
+  width: 20vw;
+  height: 4vh;
+  margin-top: .5rem;
+  outline: none;
+  background: none;
+  color:white;
+  background: rgb(67, 156, 190);
+  font-size: 1rem;
+  border-radius: 20px;
+  border: none;
+}
+/*.tweets{
+    height: 222rem;
+}*/
+.tweet-area{
+    margin-top: 2rem;
+    text-align:center;
+    
+}
+.tweets{
+    margin-left: 4rem;
+}
+.contact-wrapper h1{
+    text-align: center;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    color: blue;
+    font-size: 2.4rem;
+}
+
+
+
