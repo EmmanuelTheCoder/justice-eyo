@@ -19,34 +19,41 @@ export default class App extends Component{
                 <div className="introduction">
                      <h2>Leadership, Service & Impact</h2>
                 </div>
-                <div className="personal-quote">
+                {/* <div className="personal-quote">
                     <blockquote>"The confluence between education and communication is empowered to resolve
                        or address a problem."
                    </blockquote>
-                </div>
+                </div> */}
                 {/* <a href="https://icons8.com/icon/3861/twitter">Twitter icon by Icons8</a> */}
                 <div className="button-container">
                     <button type="button" className="blog-button"><a href="https://medium.com/@justiceeyo/" style={{color: 'white'}}>Blog</a></button>
                 </div>
                 <div className="meet-justice">
-                    <h1 className="about-justice">BIO
+                    {/* <h1 className="about-justice">BIO
                     <img alt="icon" className="meet-logo"src="https://img.icons8.com/officel/30/000000/employee-card.png"/>
-                    </h1>
+                    </h1> */}
                    
                     <div className="intro">
                        <p>
                        Justice Eyo is a Communications and Education for Sustainable Development enthusiast with over 4 years of experience teaching and driving civic discourse. He is a Writing Fellow at African Liberty and a YALI RLC West Africa emerging leader.
-
+                        <br/>
+                        <br/>
                         As a Radio Analyst at Search FM Campus Radio, Justice is building on his award-winning speaking experience 
                         to demand better governance and promote civic responsibility.  To advocate for decent work and economic 
                         growth he created the popular blog series Corper Spotlight, which publishes articles about outstanding 
                         National Youth Service Corps members. He has edited and written several published works, served as the 
                         Radio Director of a Community Development Service group, among others.
-
+                        <br/>
+                        <br/>
                         He strives for social impact in the public education sector, through which he hopes to 
                         increase access to quality education promote social mobility. <a href="https://medium.com/@justiceeyo/" target="_blank" rel="noopener noreferrer">He blogs about his experiences, 
                         governance, and developments in the education sector in Nigeria</a>
                         <br/>
+                        <br/>
+                        <hr/>
+                        <br/>
+
+                        <Social />
 
 
                         Hello there, thanks for visiting me here. My network is growing. If you want a friend to talk to, 
@@ -72,7 +79,7 @@ export default class App extends Component{
                     </div>
                 </div>
 
-                <Social />
+                
                 <div className="contact-wrapper">
                     <h1>Contact Me</h1>
                     <form method="post" name="contact" netlify className="contact-form">
@@ -93,7 +100,13 @@ export default class App extends Component{
                 </div>
 
                 <footer>
-                    <p>© Justice Eyo 2020. All rights reserved.</p>
+                    <div className="social-bottom">
+                        <a href="https://www.facebook.com/justiceelliseyo" target="_blank" rel="noopener noreferrer"> <img src="https://img.icons8.com/android/48/000000/facebook-new.png" alt="fb icon"/> </a>
+                        <a href="https://www.linkedin.com/in/justiceeyo" target="_blank" rel="noopener noreferrer"> <img src="https://img.icons8.com/android/48/000000/linkedin.png" alt="ln icon"/></a>
+                        <a href="https://www.twitter.com/justice_eyo" target="_blank" rel="noopener noreferrer"> <img alt="tw icon"src="https://img.icons8.com/android/24/000000/twitter.png"/> </a>
+                        
+                    </div> 
+                    <p>© 2020 Justice Eyo</p>
                 </footer>    
                         
             </div>

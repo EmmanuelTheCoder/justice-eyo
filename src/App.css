@@ -72,14 +72,18 @@ a{
     padding: 0rem .5rem;
 }
 .intro{
-    padding: .5rem 1rem;
+    /* padding: .5rem 1rem; */
     font-size: 1.15rem;
     font-family: tahoma;
     line-height: 2rem;
     color: black;
     font-family: Montserrat;
+         
+}
+.intro p{
+    text-align: justify;
+    padding: 0 2rem;
 
-       
 }
 .experience{
     text-align: center;
@@ -185,6 +189,9 @@ blockquote{
     height: 2rem;
     width: 14rem;
 }*/
+.social, .connect{
+    text-align: center;
+}
 
 input, textarea{
   display: flex;
@@ -215,6 +222,7 @@ button{
 
 .tweet-area{
     margin-top: 2rem;
+    margin-bottom: 2rem;
     text-align:center;
     margin-left: 2rem;
 }
@@ -259,13 +267,46 @@ footer{
     margin-top: 5rem;
     font-family: Montserrat;
     text-align: center;
-    background: black;
-    height: 12vh;
-    color: white;
+    background: rgb(97, 95, 95);
+    height: 18vh;
+    color: rgb(190, 187, 187);
     font-size: 1.2rem;
 }
 footer p{
     line-height: 12vh;
+}
+.social-bottom a img{
+    width: 1.4rem;
+    margin-top: .8rem;
+    
+}
+@media(min-width: 900px){
+    /* .tweet-area{
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+    }
+    .align-tweet{
+        margin-left: 5rem;
+    } */
+    .align-tweet{
+        text-align: center;
+        width: 30rem;
+        margin: auto;
+    }
+    input{
+        width: 20rem;
+        height: 1.5rem;
+        
+    }
+    textarea{
+        width: 20rem;
+        height: 13rem;
+    }
+    label{
+        font-size: 1.5rem;
+    }
+    
 }
 
 
