@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
 import Social from './Social';
-import justice from './pictures/realjustice.jpg';
 import justices from './pictures/editjustice1.jpg'
 
 export default class App extends Component{
