@@ -53,7 +53,7 @@ a{
     text-align: center;
     padding-bottom: 2rem;
     font-style: italic;
-    margin-top: -1rem;
+    margin-top: .2rem;
     color: rgb(97, 97, 150);
 }
 .introduction .social img{
@@ -141,6 +141,48 @@ blockquote{
     font-style: italic;
     color: rgb(101, 101, 206);
 }
+.hamburger{
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin-top: .5rem;
+}
+.hamburger-toggle{
+    background: rgb(65, 65, 105);
+    height: 40rem;
+    width: 15rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: none;
+}
+.hamburger-header-link{
+    margin-top: 15rem;
+}
+.hamburger-header-link > a{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    padding-bottom: 1.5rem;
+
+}
+.close{
+    margin-top: -.5rem;
+    position: fixed;
+    right: 4rem;
+    margin-right: 8rem;
+    
+}
+.close img{
+    width: 3rem;
+    margin-top: 10rem;
+}
+
+
 .personal-quote{
     font-size: 1.4rem;
     text-align: center;
@@ -256,13 +298,78 @@ button{
 }
 .image-logo{
     text-align: center;
+    background: url(./pictures/justice1.jpg) no-repeat;
+    height: 45rem;
+    
+    margin-top: -10rem;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    /* object-fit: cover; */
 }
 .round-pic{
-    border-radius: 20%;
     margin-bottom: .5rem;
-    height: 20rem;
+    height: 38rem;
+    width: 100%;
+    margin-top: -8rem;
 
 }
+.fixed-headers{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    text-transform: uppercase; 
+    padding-top: 1rem; 
+    
+}
+.name-header{
+    font-size: 1.4rem;
+    color: white;
+    font-family: Montserrat;
+    font-weight: bold;
+    padding-left: 2rem;
+}
+.header-link{
+    position: fixed;
+    right: 8rem;
+  
+}
+.untesting{
+    padding-right: 1rem;
+    color: black;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    font-weight: bold; 
+}
+
+.header-link a{
+   
+    padding-right: 1rem;
+    color: white;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    
+}
+.social-top{
+    position: fixed;
+    right: 0;
+}
+.social-top img{
+    width: 1.5rem;
+}
+.change-nav{
+    background: rgb(72, 72, 121);
+    width: 100%;
+    height: 4rem;
+}
+/* .color-change a{
+    color: green;
+    
+} */
+
 footer{
     margin-top: 5rem;
     font-family: Montserrat;
@@ -279,6 +386,14 @@ footer p{
     width: 1.4rem;
     margin-top: .8rem;
     
+}
+@media(min-width: 480px){
+    .header-link{
+        display: none;
+    }
+    .social-top{
+        display: none;
+    }
 }
 @media(min-width: 900px){
     /* .tweet-area{
@@ -307,6 +422,21 @@ footer p{
         font-size: 1.5rem;
     }
     
+}
+@media(min-width: 1000px){
+    .close-hamburger-toggle{
+        display: none;
+    }
+    .header-link{
+        display: block;
+    }
+    .social-top{
+        display: flex;
+    }
+    .hamburger{
+        display: none;
+    }
+   
 }
 
 
