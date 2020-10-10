@@ -170,6 +170,9 @@ blockquote{
     padding-bottom: 1.5rem;
 
 }
+.hamburger-header-link a:last-child{
+    text-align: center;
+}
 .close{
     margin-top: -.5rem;
     position: fixed;
@@ -296,9 +299,11 @@ button{
     display: block;
     font-weight: 800;
 }
+/* the former image i used was justice1 */
+
 .image-logo{
     text-align: center;
-    background: url(./pictures/justice1.jpg) no-repeat;
+    background:  linear-gradient(to right, rgba(126, 124, 124, 0.3), rgba(177, 174, 177, 0.1)), url(./pictures/editjustice.jpg) no-repeat;
     height: 45rem;
     
     margin-top: -10rem;
@@ -306,8 +311,9 @@ button{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    /* object-fit: cover; */
+    object-fit: cover;
 }
+
 .round-pic{
     margin-bottom: .5rem;
     height: 38rem;
@@ -326,9 +332,9 @@ button{
 }
 .name-header{
     font-size: 1.4rem;
-    color: white;
+    color: whitesmoke;
     font-family: Montserrat;
-    font-weight: bold;
+    font-weight: 900;
     padding-left: .5rem;
 }
 .header-link{
@@ -491,6 +497,9 @@ footer p{
     }
     .hamburger{
         display: none;
+    }
+    .intro p{
+        padding: 0 10rem;
     }
    
 }

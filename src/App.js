@@ -18,10 +18,17 @@ export default class App extends Component{
       handleScroll = () => {
         if (window.scrollY > 300) {
           document.querySelector(".fixed-headers").className = "fixed-headers change-nav";
- 
+         
+        //   let changeNameColor = document.querySelector(".name-header");
+        //   changeNameColor.style.color = "white";
+    
         } else {
           document.querySelector(".fixed-headers").className = "fixed-headers";
           
+        //   let changeNameColor = document.querySelector(".name-header");
+        //   changeNameColor.style.color = "black";
+
+
         }
         
       };
@@ -54,9 +61,14 @@ export default class App extends Component{
                {/* <div className="signature">
                    <h1>Justice Ellis Eyo</h1>
                 </div> */}
+               
+
+               
                 <div className="image-logo">
                     {/* <img src={justices} className="round-pic" alt="self"/> */}
-                </div>
+
+                </div> 
+                
                 <div className="close-hamburger-toggle">
                 <div className="hamburger-toggle">
                     {/* close hamburger bar */}
@@ -68,7 +80,7 @@ export default class App extends Component{
                     <div className="hamburger-header-link">
                         <a href="#bio" onClick={this.closeHamburger}>bio</a>
                         <a href="#contact" onClick={this.closeHamburger}>contact</a>
-                        <a onClick={this.closeHamburger}href="https://medium.com/@justiceeyo/" target="_blank" rel="noopener noreferrer">blog</a>
+                        <a onClick={this.closeHamburger}href="https://facebook.com/pg/corperspotlight/posts/" target="_blank" rel="noopener noreferrer">corper spotlight</a>
                     </div>
                 </div>
                 </div>
@@ -78,7 +90,7 @@ export default class App extends Component{
                     <div className="header-link">
                         <a href="#bio">bio</a>
                         <a href="#contact">contact</a>
-                        <a href="https://medium.com/@justiceeyo/" target="_blank" rel="noopener noreferrer">blog</a>
+                        <a href="https://facebook.com/pg/corperspotlight/posts/" target="_blank" rel="noopener noreferrer">corper spotlight</a>
                     </div>
 
                     {/* open button for hamburger */}
@@ -144,8 +156,7 @@ export default class App extends Component{
 
 
                         Hello, thanks for visiting my site. My network is growing and I’d like to connect with you.  
-                        Please click on the links below or kindly fill this form to send me a mail. To read my articles, 
-                        <a className="blog-link"href="https://medium.com/@justiceeyo/" target="_blank" rel="noopener noreferrer"> please click here.</a>
+                        Please click on the links below or kindly fill this form to send me a mail.
                         
                         <span className="connect">Connect with me:</span>  
                         <div className="social">
