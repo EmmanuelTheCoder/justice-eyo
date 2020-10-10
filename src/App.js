@@ -161,19 +161,7 @@ export default class App extends Component{
                         I hope to hear from you soonest. Enjoy!
 
                         <br/>
-                        <br/>
-                        <p style={{fontWeight:"bold", textAlign: "justify"}}>Elsewhere</p>
-                Hello, my name is Justice Eyo. I am an Education for Sustainable Development enthusiast, 
-                a Writing Fellow at African Liberty, and a YALI RLC West Africa emerging leader. I believe that community education, 
-                teacher development, and youth empowerment are crucial to delivering quality education and increasing social mobility 
-                in Nigeria.
-
-                Don't want our daily posts in your mail, here's a great way to stay updated with us. 
-                Subscribe to the EDIN WEEKLY NEWSLETTER…
-
-                Every week, I curate my favorite stories as published on EDIN and feature other exciting developments about 
-                Education in Nigeria published elsewhere. Just the top stories for you to glance through in 7 minutes.
-
+                        
 
                        </p>
                     </div>
