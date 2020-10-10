@@ -329,7 +329,7 @@ button{
     color: white;
     font-family: Montserrat;
     font-weight: bold;
-    padding-left: 2rem;
+    padding-left: .5rem;
 }
 .header-link{
     position: fixed;
