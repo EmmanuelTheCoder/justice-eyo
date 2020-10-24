@@ -385,6 +385,9 @@ footer{
     color: rgb(190, 187, 187);
     font-size: 1.2rem;
 }
+footer a{
+    color: rgb(190, 197, 194);
+}
 footer p{
     line-height: 12vh;
 }

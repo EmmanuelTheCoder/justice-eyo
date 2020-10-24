@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Social from './Social';
-// import justices from './pictures/justice1.jpg'
+
 
 export default class App extends Component{
     
@@ -18,62 +18,35 @@ export default class App extends Component{
       handleScroll = () => {
         if (window.scrollY > 300) {
           document.querySelector(".fixed-headers").className = "fixed-headers change-nav";
-         
-        //   let changeNameColor = document.querySelector(".name-header");
-        //   changeNameColor.style.color = "white";
     
         } else {
           document.querySelector(".fixed-headers").className = "fixed-headers";
           
-        //   let changeNameColor = document.querySelector(".name-header");
-        //   changeNameColor.style.color = "black";
-
-
         }
         
       };
       openHamburger = () =>{
         let openNav = document.querySelector(".hamburger-toggle");
         openNav.style.display = "block";
-        // document.querySelector(".close").style.display = "block";
       }
       closeHamburger = () =>{
         let closeNav = document.querySelector(".hamburger-toggle");
         closeNav.style.display = "none";
-        // document.querySelector(".close").style.display = "none";
       }
-    // handleScroll = () =>{
-    //     if (window.pageYOffset > 20){
-    //         if(!this.state.className){
-    //             this.setState({className: "change-nav"})
-    //             alert("scrolling");
-    //         }
-    //     }else{
-    //         if(this.state.className){
-    //             this.setState({className: ""})
-                
-    //         }
-    //     }
-    // }
+   
     render(){
         return(
             <div>
-               {/* <div className="signature">
-                   <h1>Justice Ellis Eyo</h1>
-                </div> */}
-               
-
-               
                 <div className="image-logo">
-                    {/* <img src={justices} className="round-pic" alt="self"/> */}
-
+                    {/* contains the header picture in the css */}
                 </div> 
                 
                 <div className="close-hamburger-toggle">
                 <div className="hamburger-toggle">
+
                     {/* close hamburger bar */}
                     <div className="close" onClick={this.closeHamburger}>
-                        {/* <img alt="close btn"src="https://img.icons8.com/color/40/000000/close-window.png"/> */}
+                      
                         <img src="https://img.icons8.com/plasticine/100/000000/delete-sign.png " alt="delete"/>
                     </div>
 
@@ -94,6 +67,7 @@ export default class App extends Component{
                     </div>
 
                     {/* open button for hamburger */}
+
                     <div className="hamburger" onClick={this.openHamburger}> 
                         <img alt="hamburger" src="https://img.icons8.com/ultraviolet/40/000000/menu.png"/>
                     </div>
@@ -112,19 +86,7 @@ export default class App extends Component{
                      
                      
                 </div>
-                {/* <div className="personal-quote">
-                    <blockquote>"The confluence between education and communication is empowered to resolve
-                       or address a problem."
-                   </blockquote>
-                </div> */}
-                {/* <a href="https://icons8.com/icon/3861/twitter">Twitter icon by Icons8</a> */}
-                {/* <div className="button-container">
-                    <button type="button" className="blog-button"><a href="https://medium.com/@justiceeyo/" style={{color: 'white'}}>Blog</a></button>
-                </div> */}
                 <div className="meet-justice">
-                    {/* <h1 className="about-justice">BIO
-                    <img alt="icon" className="meet-logo"src="https://img.icons8.com/officel/30/000000/employee-card.png"/>
-                    </h1> */}
                    
                     <div className="intro">
                        <p id="bio">
@@ -165,9 +127,6 @@ export default class App extends Component{
                         <a href="https://www.twitter.com/justice_eyo" target="_blank" rel="noopener noreferrer"> <img alt="tw icon"src="https://img.icons8.com/fluent/48/000000/twitter.png"/> </a>
                     
                     </div>
-                        {/* Linkedin: linkedin.com/in/justiceeyo
-                        Twitter: @justice_eyo
-                        Facebook: facebook.com/justiceelliseyo */}
 
                         I hope to hear from you soonest. Enjoy!
 
@@ -205,12 +164,11 @@ export default class App extends Component{
                         <a href="https://www.twitter.com/justice_eyo" target="_blank" rel="noopener noreferrer"> <img src="https://img.icons8.com/fluent-systems-regular/48/000000/twitter.png" alt="tw icon"/> </a>
                         
                     </div> 
-                    <p>© 2020 Justice Eyo</p>
+                    <p>© 2020 Justice Eyo. Created by <a href="https://emmanuel.netlify.com" target="_blank" rel="noopener noreferrer">Emmanuel</a></p>
+                    
                 </footer>    
                         
             </div>
         );
     };
 }
-
-// <img src="https://img.icons8.com/ios-filled/50/000000/menu.png"/>
